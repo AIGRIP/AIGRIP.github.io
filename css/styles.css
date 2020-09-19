@@ -4,26 +4,26 @@
   --bodyTextColour: #ffffff;
   --footerTextColour: #ffffff;
   --footerTitleTextColour: #F18800;
-  --footerLineColour: #66c83d;  
-  --topTitleTextColour: rgb(255, 80, 255);
-  --bottomTitleTextColour: rgb(255, 80, 255);
+  --lineColour: #66c83d;  
+  --topTitleTextColour: #F18800;;
+  --bottomTitleTextColour: #ffffff;
 
 
   --navBackgroundColour: #000000;
   --bodyBackgroundColour: #F18800;
   --footerBackgroundColour: #000000;
-  --sideBackgroundColour: #646464;
+  --sideBackgroundColour: #4e4e4e;
   --carouselBackgroundColour: #F18800;
   --titleBackgroundColour: #000000;
-  --titleGradientBackgroundColour: #646464;
+  --titleGradientBackgroundColour: #4e4e4e;
 
 }
 
-
+ 
 
 .main_h {
   position: fixed;
-  max-height: 70px;
+  max-height: 80px;
   z-index: 999;
   width: 100%;
   padding-top: 17px;
@@ -55,7 +55,7 @@
   border-bottom: 1px solid rgb(0,0,0);
 }
 .logo {
-  width: 50px;
+  width: 13%;
   font-size: 50px;
   color: var(--navTextColour);
   text-transform: uppercase;
@@ -63,7 +63,7 @@
   display: block;
   margin-top: 0;
   line-height: 1;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 @media only screen and (max-width: 766px) {
   
@@ -73,7 +73,7 @@
 }
 nav {
   float: right;
-  width: 90%;
+  width: 80%;
 }
 @media only screen and (max-width: 766px) {
   nav {
@@ -111,7 +111,7 @@ nav ul li {
 nav ul a {
   color: var(--navTextColour);
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 17px;
 }
 .mobile-toggle {
   display: none;
@@ -200,20 +200,21 @@ p {
   -moz-background-size: cover;
   background-size: cover;
   text-align: center;
-  color:  var(--bottomTitleTextColour);
+  
   padding-top: 110px;
   min-height: 500px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
 .hero h1 {
-  font-size: 50px;
+  font-size: 25px;
   line-height: 1.3;
+  color:  var(--bottomTitleTextColour);
 }
 .hero h1 span {
-  font-size: 25px;
+  font-size: 50px;
   color: var(--topTitleTextColour);
-  border-bottom: 2px solid var(--topTitleTextColour);
+  border-bottom: 2px solid var(--lineColour);
   padding-bottom: 12px;
   line-height: 3;
 }
@@ -294,6 +295,8 @@ html{background-color: black;}
 .container
 {
   display: block;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 
@@ -347,15 +350,6 @@ html, body {
 
 
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-
-
 .first {
   margin-top: 40px;
   margin-bottom: 50px;
@@ -375,7 +369,7 @@ html, body {
 
       .first h4::after {
           content: '';
-          background: var(--footerLineColour);
+          background: var(--lineColour);
           width: 20%;
           height: 2px;
           position: absolute;
@@ -415,7 +409,7 @@ html, body {
 
   .second h4::after {
       content: '';
-      background: var(--footerLineColour);
+      background: var(--lineColour);
       width: 20%;
       height: 2px;
       position: absolute;
@@ -470,7 +464,7 @@ html, body {
 
       .third h4::after {
           content: '';
-          background: var(--footerLineColour);
+          background: var(--lineColour);
           width: 20%;
           height: 2px;
           position: absolute;
@@ -529,7 +523,7 @@ html, body {
 
 .line {
   height:2px;
-  background-color: var(--footerLineColour);
+  background-color: var(--lineColour);
   width:100%;
 }
 
@@ -537,4 +531,18 @@ html, body {
   text-align:center;
   margin-top:100px;
   margin-bottom:100px;
+}
+
+
+.carousel-control-prev {
+  margin-left: -8%;
+}
+
+.carousel-control-next {
+  margin-right: -8%;
+}
+
+.slide{
+  width:90%;
+  margin: auto;
 }
