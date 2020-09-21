@@ -277,7 +277,7 @@ p {
 
 /* Global */
 html{background-color: black;}
-#site-content {
+.sections {
   background-color: var(--bodyBackgroundColour);
 }  
 
@@ -301,10 +301,10 @@ html{background-color: black;}
 
 
 
-#site-content {
+.sections {
 	min-height: 100%;
-	min-height: 100vh;
-	padding-top: 65px;
+  padding: 5%;
+  margin-bottom: 10px;
 	position: relative;
 	z-index: 1;
 
@@ -330,10 +330,11 @@ html, body {
 	padding: 0;
 	margin: 0;
 }
-#site-content {
+.sections {
 	background-size: contain;
 	background-position: center;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  min-width: 100%;
 }
 
 #site-footer {
@@ -546,4 +547,9 @@ html, body {
 .slide{
   width:90%;
   margin: auto;
+}
+
+.partian
+{
+  padding: 50px;
 }
