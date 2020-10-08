@@ -10,10 +10,10 @@
 
 
   --navBackgroundColour: #000000;
-  --bodyBackgroundColour: #F18800;
+  --bodyBackgroundColour: #c3ccd1;
   --footerBackgroundColour: #000000;
   --sideBackgroundColour: #4e4e4e;
-  --carouselBackgroundColour: #F18800;
+  --carouselBackgroundColour: #c3ccd1;
   --titleBackgroundColour: #000000;
   --titleGradientBackgroundColour: #4e4e4e;
 
@@ -279,7 +279,7 @@ p {
 html{background-color: black;}
 .sections {
   background-color: var(--bodyBackgroundColour);
-  background-image: linear-gradient(var(--bodyBackgroundColour),rgb(148, 84, 1));
+  /*background-image: linear-gradient(var(--bodyBackgroundColour),rgb(148, 84, 1));*/
 }  
 
 .carousel-item
@@ -578,7 +578,8 @@ html, body {
 /* Styles the thumbnail */
 
 a.lightbox img {
-  height: 150px;
+  height: 200px;
+  width: 200px;
   border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0,0,0,.3);
   }
@@ -693,69 +694,4 @@ a.lightbox img {
 
 
 
-  /* REFERENCE:
-https://code-boxx.com/image-zoom-css-javascript/
-METHOD 3 ZOOM ON CLICK (LIGHTBOX) */
-
-html, body {
-  padding: 0;
-  margin: 0;
-}
- figure {
-  margin: 0em 1em;
-  display: inline-block;
-}
-figcaption {
-  font: bold .9em/2em 'Helvetica Neue', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* IMAGE */
-.zoomD {
-  width: 300px;
-  height: auto;
-/* ease | ease-in | ease-out | linear */
-  transition: all ease-in-out 0.4s;
-  cursor: zoom-in;
-}
-/* LIGHTBOX BACKGROUND */
-#lb-back {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  transition: all ease-in-out 0.4s;
-  /* ease | ease-in | ease-out | linear
-transition: transform ease-in-out 0.5s; */
-}
-#lb-back.show {
-  visibility: visible;
-  opacity: 1;
-}
-/* LIGHTBOX IMAGE */
-#lb-img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
-#lb-img img {
-  /* FULL WIDTH IMAGE
-  width: 100%;
-  height: auto;
-  cursor: zoom-out; 
-  */
-
-  /* MAX WIDTH 1200px IMAGE */
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  cursor: zoom-out;
-}
+  
