@@ -9,13 +9,13 @@
   --bottomTitleTextColour: #ffffff;
 
 
-  --navBackgroundColour: #000000;
-  --bodyBackgroundColour: #c3ccd1;
-  --footerBackgroundColour: #000000;
-  --sideBackgroundColour: #4e4e4e;
-  --carouselBackgroundColour: #c3ccd1;
+  --navBackgroundColour: #202020;
+  --bodyBackgroundColour: #af6401;
+  --footerBackgroundColour: #202020;
+  --sideBackgroundColour: #414141;
+  --carouselBackgroundColour: #f38a00;
   --titleBackgroundColour: #000000;
-  --titleGradientBackgroundColour: #4e4e4e;
+  --titleGradientBackgroundColour: #414141;
 
 }
 
@@ -190,7 +190,7 @@ p {
   line-height: 2;
 }
 .content {
-  padding: 50px 2% 250px;
+  padding: 50px 2% 250px ;
 }
 .hero {
   position: relative;
@@ -277,9 +277,10 @@ p {
 
 /* Global */
 html{background-color: black;}
+
 .sections {
   background-color: var(--bodyBackgroundColour);
-  /*background-image: linear-gradient(var(--bodyBackgroundColour),rgb(148, 84, 1));*/
+  background-image: linear-gradient(45deg,#d37800,#d37800,#d37800,#fa8e00,#fa8e00,#fa8e00,#fa8e00,#d37800,#d37800,#d37800);
 }  
 
 .carousel-item
@@ -288,6 +289,9 @@ html{background-color: black;}
 }
 .carousel
 {
+  -webkit-box-shadow: #000 0 7px 35px 0;
+	-moz-box-shadow: #000 0 7px 35px 0;
+	box-shadow: #000 0 7px 35px 0;
   border: black;
   border-bottom: solid;
 }
@@ -298,6 +302,7 @@ html{background-color: black;}
   display: block;
   margin-left: 10%;
   margin-right: 10%;
+  padding-right: 10%;
 }
 
 
