@@ -9,11 +9,11 @@
   --bottomTitleTextColour: #ffffff;
 
 
-  --navBackgroundColour: #202020;
+  --navBackgroundColour: #2e2e2e;
   --bodyBackgroundColour: #af6401;
   --footerBackgroundColour: #202020;
   --sideBackgroundColour: #414141;
-  --carouselBackgroundColour: #f38a00;
+  --carouselBackgroundColour: #747474;
   --titleBackgroundColour: #000000;
   --titleGradientBackgroundColour: #414141;
 
@@ -50,6 +50,7 @@
 }
 .sticky {
   background-color: var(--navBackgroundColour);
+  background-image: linear-gradient(90deg,#818181,#000000,#818181);
   opacity: 1;
   top: 0px;
   border-bottom: 1px solid rgb(0,0,0);
@@ -280,12 +281,17 @@ html{background-color: black;}
 
 .sections {
   background-color: var(--bodyBackgroundColour);
-  background-image: linear-gradient(45deg,#d37800,#d37800,#d37800,#fa8e00,#fa8e00,#fa8e00,#fa8e00,#d37800,#d37800,#d37800);
+  background-image: linear-gradient(45deg,#c46f00,#c46f00,#c46f00,#fa8e00,#fa8e00,#fa8e00,#fa8e00,#c46f00,#c46f00,#c46f00);
 }  
 
 .carousel-item
 {
   background-color: var(--carouselBackgroundColour);
+  background-image: linear-gradient(45deg,#c46f00,#c46f00,#c46f00,#fa8e00,#fa8e00,#fa8e00,#fa8e00,#c46f00,#c46f00,#c46f00);
+  color: #000000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0.5rem;
 }
 .carousel
 {
@@ -293,7 +299,7 @@ html{background-color: black;}
 	-moz-box-shadow: #000 0 7px 35px 0;
 	box-shadow: #000 0 7px 35px 0;
   border: black;
-  border-bottom: solid;
+  /*border-bottom: solid;*/
 }
 
 
@@ -543,11 +549,11 @@ html, body {
 
 
 .carousel-control-prev {
-  margin-left: -8%;
+  margin-left: -11%;
 }
 
 .carousel-control-next {
-  margin-right: -8%;
+  margin-right: -11%;
 }
 
 .slide{
@@ -617,7 +623,7 @@ a.lightbox img {
   bottom: 0;
   max-height: 0%;
   max-width: 0%;
-  border: 3px solid white;
+  border: 3px solid rgb(0, 0, 0);
   box-shadow: 0px 0px 8px rgba(0,0,0,.3);
   box-sizing: border-box;
   -webkit-transition: .5s ease-in-out;
@@ -669,7 +675,7 @@ a.lightbox img {
   display: block;
   height: 30px;
   width: 1px;
-  background: black;
+  background: rgb(255, 255, 255);
   position: absolute;
   left: 26px;
   top:10px;
@@ -697,6 +703,11 @@ a.lightbox img {
   }
   
 
-
-
+#carouselSection
+{
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(32, 32, 32);
+  background-image: none;
+}
   
