@@ -315,8 +315,10 @@ html{background-color: black;}
 
 .sections {
 	min-height: 100%;
-  padding: 5%;
-  margin-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 	position: relative;
 	z-index: 1;
 
@@ -573,11 +575,17 @@ html, body {
   justify-content: center;
 }
 
-#topPic
+.roundPicTop
 {
   border-radius: 50%;
-  margin-right: 5%;
+}
 
+
+.roundPic
+{
+  border-radius: 50%;
+  width: 20px; 
+  height: 20px;
 }
 #Top
 {
@@ -710,4 +718,9 @@ a.lightbox img {
   background-color: rgb(32, 32, 32);
   background-image: none;
 }
-  
+
+.buttons {
+  display: flex; /* or inline-flex */
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
